@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Template originator="Adam Patridge" created="2015/02/11" lastModified="2015/02/11">
+  <TemplateConfiguration>
+    <_Name>Xamarin.iOS w/ Coded UI</_Name>
+    <_Category>C#/iOS/Unified API</_Category>
+    <Icon>md-project-iphone</Icon>
+    <LanguageName>C#</LanguageName>
+    <_Description>Creates a Xamarin.iOS project ready for code-based UIs.</_Description>
+  </TemplateConfiguration>
+
+  <Actions>
+    <Open filename = "Controllers/${SafeProjectName}ViewController.cs"/>
+  </Actions>
+
+  <Combine name = "${ProjectName}" directory = ".">
+    <Options>
+      <StartupProject>${ProjectName}</StartupProject>
+    </Options>
+
+    <Project name="${ProjectName}" directory="." type="XamarinIOS">
+      <Options TargetFrameworkVersion = "Xamarin.iOS,Version=v1.0" />
+      <References>
+        <Reference type="Gac" refto="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+        <Reference type="Gac" refto="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+        <Reference type="Gac" refto="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+        <Reference type="Gac" refto="System.Net.Http, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+        <Reference type="Gac" refto="Xamarin.iOS" />
+      </References>
+      <Files>
+        <!-- On each file? AddStandardHeader="True" -->
+        <File name="AppDelegate.cs" src="/Files/code/AppDelegate.cs" />
+        <Directory name="Controllers">
+          <File name="BaseViewController.cs" src="/Files/code/BaseViewController.cs" />
+          <File name="${SafeProjectName}ViewController.cs" src="/Files/code/FirstProjectViewController.cs" />
+        </Directory>
+        <File name="Entitlements.plist" src="/Files/config/Entitlements.plist" />
+        <File name="Info.plist" src="/Files/config/Info.plist" />
+        <RawFile name="Default-568h@2x.png" src="/Files/images/Default-568h@2x.png" />
+        <Directory name="Helpers">
+          <RawFile name="Splash.png" src="/Files/code/VersionDetection.cs" />
+        </Directory>
+        <Directory name="Resources">
+          <File name="LaunchScreen.xib" src="/Files/ui/LaunchScreen.xib" />
+          <RawFile name="Splash.png" src="/Files/images/Splash.png" />
+          <Directory name="Images.xcassets">
+            <Directory name="AppIcons.appiconset">
+              <File name="Contents.json" src="/Files/config/Contents.json" />
+            </Directory>
+          </Directory>
+        </Directory>
+      </Files>
+    </Project>
+  </Combine>
+</Template>
