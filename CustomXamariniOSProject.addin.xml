@@ -9,23 +9,32 @@
        version     = "0.1.0">
 
   <Runtime>
-    <Import file = "CustomXamariniOSProject.xpt.xml"/>
-    <Import file = "LICENSE" />
-    <Import file = "README.md" />
+    <Import file="CustomXamariniOSProject.xpt.xml"/>
+    <Import file="LICENSE" />
+    <Import file="README.md" />
+    <Import file="Files/code/AppDelegate.cs" />
+    <Import file="Files/code/BaseViewController.cs" />
+    <Import file="Files/code/FirstProjectViewController.cs" />
+    <Import file="Files/config/Contents.json" />
+    <Import file="Files/config/Entitlements.plist" />
+    <Import file="Files/config/Info.plist" />
+    <Import file="Files/images/Default-568h@2x.png" />
+    <Import file="Files/images/Splash.png" />
+    <Import file="Files/ui/LaunchScreen.xib" />
   </Runtime>
 
   <Dependencies>
-    <Addin id = "Ide" version="4.2.3"/>
-    <Addin id = "CSharpBinding" version = "4.2.3" />
+    <Addin id="Ide" version="4.2.3"/>
+    <Addin id="CSharpBinding" version="4.2.3" />
   </Dependencies>
 
-  <Extension path = "/MonoDevelop/Ide/ProjectTemplates">
-    <ProjectTemplate id   = "iOSStarterTemplate"
-                     file = "CustomXamariniOSProject.xpt.xml"/>
+  <Extension path="/MonoDevelop/Ide/ProjectTemplates">
+    <ProjectTemplate id="iOSStarterTemplate"
+                     file="CustomXamariniOSProject.xpt.xml" />
   </Extension>
 
-  <!--<Extension path = "/MonoDevelop/Ide/FileTemplates">
-    <FileTemplate id   = "OpenOfficeSpreadsheetDocHelper"
-                  file = "OpenOfficeSpreadsheetDocHelper.xft.xml"/>
+  <!--<Extension path="/MonoDevelop/Ide/FileTemplates">
+    <FileTemplate id="OpenOfficeSpreadsheetDocHelper"
+                  file="OpenOfficeSpreadsheetDocHelper.xft.xml" />
   </Extension>-->
 </Addin>
