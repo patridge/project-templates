@@ -1,11 +1,11 @@
 <Addin id          = "iOSStarterTemplate"
-       namespace   = "PatridgeDev.iOSStarterTemplate"
-       name        = "Custom Xamarin.iOS Project"
+       namespace   = "PatridgeDev"
+       name        = "Custom iOS Project"
        author      = "Adam Patridge"
        copyright   = "MIT"
        url         = "http://www.patridgedev.com/"
        description = "Just a custom starter project for Xamarin.iOS."
-       category    = "Templates"
+       category    = "Mobile Development"
        version     = "0.1.0">
 
   <Runtime>
@@ -23,16 +23,12 @@
     <Import file="Files/ui/LaunchScreen.xib" />
   </Runtime>
 
-  <Dependencies>
-    <Addin id="Ide" version="4.2.3"/>
-    <Addin id="CSharpBinding" version="4.2.3" />
-  </Dependencies>
-
   <Extension path="/MonoDevelop/Ide/ProjectTemplates">
     <ProjectTemplate id="iOSStarterTemplate"
                      file="CustomXamariniOSProject.xpt.xml" />
   </Extension>
 
+  <!-- TODO: file templates -->
   <!--<Extension path="/MonoDevelop/Ide/FileTemplates">
     <FileTemplate id="OpenOfficeSpreadsheetDocHelper"
                   file="OpenOfficeSpreadsheetDocHelper.xft.xml" />
