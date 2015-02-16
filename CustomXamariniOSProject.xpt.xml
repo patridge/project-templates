@@ -9,16 +9,16 @@
   </TemplateConfiguration>
 
   <Actions>
-    <Open filename = "Controllers/${SafeProjectName}ViewController.cs"/>
+    <Open filename="Controllers/HomeViewController.cs"/>
   </Actions>
 
-  <Combine name = "${ProjectName}" directory = ".">
+  <Combine name="${ProjectName}" directory=".">
     <Options>
       <StartupProject>${ProjectName}</StartupProject>
     </Options>
 
     <Project name="${ProjectName}" directory="." type="XamarinIOS">
-      <Options TargetFrameworkVersion = "Xamarin.iOS,Version=v1.0" />
+      <Options TargetFrameworkVersion="Xamarin.iOS,Version=v1.0" />
       <References>
         <Reference type="Gac" refto="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
         <Reference type="Gac" refto="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
@@ -28,23 +28,23 @@
       </References>
       <Files>
         <!-- On each file? AddStandardHeader="True" -->
-        <File name="AppDelegate.cs" src="/Files/code/AppDelegate.cs" />
+        <File name="AppDelegate.cs" src="Files/code/AppDelegate.cs" />
         <Directory name="Controllers">
-          <File name="BaseViewController.cs" src="/Files/code/BaseViewController.cs" />
-          <File name="${SafeProjectName}ViewController.cs" src="/Files/code/FirstProjectViewController.cs" />
+          <File name="BaseViewController.cs" src="Files/code/BaseViewController.cs" />
+          <File name="HomeViewController.cs" src="Files/code/FirstProjectViewController.cs" />
         </Directory>
-        <File name="Entitlements.plist" src="/Files/config/Entitlements.plist" />
-        <File name="Info.plist" src="/Files/config/Info.plist" />
-        <RawFile name="Default-568h@2x.png" src="/Files/images/Default-568h@2x.png" />
+        <File name="Entitlements.plist" src="Files/config/Entitlements.plist" />
+        <File name="Info.plist" src="Files/config/Info.plist" />
+        <RawFile name="Default-568h@2x.png" src="Files/images/Default-568h@2x.png" />
         <Directory name="Helpers">
-          <RawFile name="Splash.png" src="/Files/code/VersionDetection.cs" />
+          <RawFile name="Splash.png" src="Files/code/DeviceCapabilities.cs" />
         </Directory>
         <Directory name="Resources">
-          <File name="LaunchScreen.xib" src="/Files/ui/LaunchScreen.xib" />
-          <RawFile name="Splash.png" src="/Files/images/Splash.png" />
+          <File name="LaunchScreen.xib" src="Files/ui/LaunchScreen.xib" />
+          <RawFile name="Splash.png" src="Files/images/Splash.png" />
           <Directory name="Images.xcassets">
             <Directory name="AppIcons.appiconset">
-              <File name="Contents.json" src="/Files/config/Contents.json" />
+              <File name="Contents.json" src="Files/config/Contents.json" />
             </Directory>
           </Directory>
         </Directory>

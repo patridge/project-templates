@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <Addin id          = "iOSStarterTemplate"
        namespace   = "PatridgeDev"
        name        = "Custom iOS Project"
@@ -6,13 +7,14 @@
        url         = "http://www.patridgedev.com/"
        description = "Just a custom starter project for Xamarin.iOS."
        category    = "Mobile Development"
-       version     = "0.1.0">
+       version     = "0.1.5">
 
   <Runtime>
     <Import file="CustomXamariniOSProject.xpt.xml"/>
     <Import file="LICENSE" />
     <Import file="README.md" />
     <Import file="Files/code/AppDelegate.cs" />
+    <Import file="Files/code/DeviceCapabilities.cs" />
     <Import file="Files/code/BaseViewController.cs" />
     <Import file="Files/code/FirstProjectViewController.cs" />
     <Import file="Files/config/Contents.json" />
