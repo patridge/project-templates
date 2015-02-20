@@ -1,6 +1,7 @@
 using System;
 using Foundation;
 using UIKit;
+using ${SafeProjectName}.Controllers;
 
 namespace ${SafeProjectName} {
     [Register("AppDelegate")]
