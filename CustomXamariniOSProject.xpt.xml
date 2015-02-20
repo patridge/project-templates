@@ -36,9 +36,6 @@
         <File name="Entitlements.plist" src="Files/config/Entitlements.plist" />
         <File name="Info.plist" src="Files/config/Info.plist" />
         <RawFile name="Default-568h@2x.png" src="Files/images/Default-568h@2x.png" />
-        <Directory name="Helpers">
-          <RawFile name="Splash.png" src="Files/code/DeviceCapabilities.cs" />
-        </Directory>
         <Directory name="Resources">
           <File name="LaunchScreen.xib" src="Files/ui/LaunchScreen.xib" />
           <RawFile name="Splash.png" src="Files/images/Splash.png" />

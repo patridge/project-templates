@@ -1,4 +1,5 @@
 using UIKit;
+using ObjCRuntime;
 
 namespace ${SafeProjectName}.Controllers {
     public class BaseViewController : UIViewController {
