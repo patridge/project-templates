@@ -2,7 +2,7 @@ using CoreGraphics;
 using UIKit;
 
 namespace ${SafeProjectName}.Controllers {
-    public partial class ${SafeProjectName}ViewController : BaseViewController {
+    public class ${SafeProjectName}ViewController : BaseViewController {
         UITextView someView;
         public override void ViewDidLoad() {
             base.ViewDidLoad();
